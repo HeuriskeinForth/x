@@ -9,6 +9,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f4f2eb'/%3E%3Ctext x='12' y='47' font-family='Georgia' font-size='46' fill='%23222320'%3EH%3C/text%3E%3C/svg%3E">
 <style>
 *{box-sizing:border-box}html{height:100%;background:#f4f2eb}body{margin:0;color:#222320;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}::selection{background:#c6cbb5}main{position:relative;min-height:100svh;overflow:hidden;padding:38px 4.6vw;display:flex;flex-direction:column}.top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}.mark{width:38px;height:38px}.label,.status{font-size:11px;letter-spacing:.19em;text-transform:uppercase}.label{color:#575950}.hero{position:relative;z-index:2;margin-top:auto;margin-bottom:auto;padding-top:100px;padding-bottom:130px}.name{font-size:clamp(43px,8.9vw,160px);font-weight:400;letter-spacing:-.065em;line-height:1.08;margin:0 0 37px;white-space:nowrap}.tagline{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.035em;font-size:clamp(28px,3.3vw,55px);line-height:1.22;margin:0}.tagline span{display:block}.tagline span:last-child{color:#73766b}.bottom{position:relative;z-index:2;display:flex;align-items:center;gap:14px;border-top:1px solid #22232026;padding-top:23px}.dot{width:5px;height:5px;border-radius:50%;background:#6d7657;box-shadow:0 0 0 4px #6d76570b}.art{position:absolute;width:min(53vw,820px);height:min(53vw,820px);right:-5vw;top:30%;opacity:.49;pointer-events:none;transform:rotate(-22deg)}.art svg{width:100%;height:100%;overflow:visible}.strand{fill:none;stroke:#9da38c;stroke-width:.65;vector-effect:non-scaling-stroke}.orbit{transform-origin:400px 400px;animation:turn 100s linear infinite}.enter{animation:enter 1.3s cubic-bezier(.2,.6,.2,1) both}.tagline{animation-delay:.12s}.bottom{animation-delay:.25s}@keyframes turn{to{transform:rotate(360deg)}}@keyframes enter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(min-width:1700px){main{padding-left:max(4.6vw,calc((100vw - 1650px)/2));padding-right:max(4.6vw,calc((100vw - 1650px)/2))}}@media(max-width:600px){main{padding:27px 24px}.label{font-size:9px;letter-spacing:.15em}.mark{width:30px;height:30px}.hero{padding-top:75px;padding-bottom:120px}.name{font-size:clamp(30px,8.8vw,53px);margin-bottom:28px;letter-spacing:-.06em}.tagline{font-size:31px;line-height:1.25}.art{width:115vw;height:115vw;top:42%;right:-48vw;opacity:.43}.bottom{padding-top:21px}.status{font-size:10px}}@media(prefers-reduced-motion:reduce){.enter,.orbit{animation:none}}
+.socials{margin-left:auto;display:flex;align-items:center;gap:28px}.socials a{display:inline-flex;align-items:center;gap:8px;min-height:30px;color:#575950;text-decoration:none;font-size:11px;letter-spacing:.13em;text-transform:uppercase;transition:color .2s ease}.socials a:hover{color:#222320}.socials a:focus-visible{outline:1px solid currentColor;outline-offset:5px}.socials svg{width:11px;height:11px;transition:transform .2s ease}.socials a:hover svg{transform:translate(2px,-2px)}@media(max-width:600px){.socials{gap:18px}.socials a{font-size:10px;letter-spacing:.1em}.bottom{gap:10px}}@media(prefers-reduced-motion:reduce){.socials a,.socials svg{transition:none}}
 </style>
 </head>
 <body>
@@ -22,7 +23,13 @@
 <p class="tagline enter"><span>Question the Known.</span><span>Discover the Next.</span></p>
 </div>
 <div class="art" aria-hidden="true"><svg viewBox="0 0 800 800"><g class="orbit" id="threads"></g></svg></div>
-<footer class="bottom enter"><span class="dot" aria-hidden="true"></span><span class="status">Coming soon</span></footer>
+<footer class="bottom enter">
+<span class="dot" aria-hidden="true"></span><span class="status">Coming soon</span>
+<nav class="socials" aria-label="Social links">
+<a href="https://discord.gg/eahmZbCT3" target="_blank" rel="noopener noreferrer" aria-label="Join HeuriskeinForth on Discord (opens in a new tab)">Discord<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10 10 2M2 2h8v8" stroke="currentColor" stroke-width="1.2"/></svg></a>
+<a href="https://x.com/HeuriskeinForth" target="_blank" rel="noopener noreferrer" aria-label="Follow HeuriskeinForth on X (opens in a new tab)">X<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10 10 2M2 2h8v8" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</nav>
+</footer>
 </main>
 <script>
 const threads=document.getElementById('threads');
